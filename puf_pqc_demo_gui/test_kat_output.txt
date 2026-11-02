@@ -1,0 +1,18 @@
+========================================================================
+test_kat.py — Dilithium2 (vendor: GiacomoPope/dilithium-py, MIT) KAT 自测 + 对拍
+========================================================================
+[PASS] a) keygen 官方KAT逐字节一致 (5/5)
+[PASS] b) verify 官方KAT全过 (15/15)
+[PASS] c) 自签自验回路 verify(pk,m,sig)==True
+[PASS] c') 篡改签名1字节后 verify==False（负样本）
+------------------------------------------------------------------------
+对拍验收：Python 仿真后端 vs FPGA 硬件实测值（sim_logs）
+[PASS] PUF DEV0 R == 硬件实测  7a472b8311da5759b39f9618c8731a252a310d318f6dc71ca71c448f4cd31b75
+[PASS] PUF DEV1 R == 硬件实测  1cc50e310670924813f112c4bcced97851b9bf346717ff74581fb5bf4c14b98b
+[PASS] 固件SHA3(good) == 硬件实测  498cd3cc87a77b907debb761a2e6f59ed9edeaefc74f2c9c5c5f3b62f64c4aa1
+[PASS] 固件SHA3(tampered fw[0]^=1) == 硬件实测  40e61a44dc7f5a785b71eb98fe716760f2b0e73e99c824489594e26ba4df02e5
+[PASS] keygen(R_DEV0) PUBK == 硬件实测（2624hex 逐字节）  前缀 ba5fa313ffba9519
+[PASS] keygen(R_DEV0) PRIV == 硬件实测（5056hex 逐字节）  前缀 ba5fa313ffba9519
+[PASS] keygen(R_DEV1) PUBK == 硬件实测（2624hex 逐字节）  前缀 2fed1907ec4f0c8c
+------------------------------------------------------------------------
+总计：全部通过

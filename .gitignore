@@ -1,0 +1,13 @@
+# 编译与仿真产物
+*.sim/
+*.cache/
+*.runs/
+*.hw/
+*.ip_user_files/
+xsim.dir/
+*.jou
+*.log
+__pycache__/
+*.pyc
+*.elf
+*.o

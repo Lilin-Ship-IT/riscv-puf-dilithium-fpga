@@ -1,0 +1,8 @@
+{
+  "baud": 115200,
+  "timeout": 10,
+  "tamper_random": true,
+  "dark": false,
+  "backend": "ser",
+  "perf_n": 20
+}

@@ -1,0 +1,7 @@
+# 四场景预期值（Python hashlib 预算，供 log 交叉核对）
+FW(0x00..0xFF×2048) SHA3-256:
+  good     = 498cd3cc87a77b907debb761a2e6f59ed9edeaefc74f2c9c5c5f3b62f64c4aa1
+  tampered = 40e61a44dc7f5a785b71eb98fe716760f2b0e73e99c824489594e26ba4df02e5
+PUF: C = 0001..1f (32B)
+  DEV=0 DEVICE_CONST=a5×32 → R = 7a472b8311da5759b39f9618c8731a252a310d318f6dc71ca71c448f4cd31b75
+  DEV=1 DEVICE_CONST=5a×32 → R = 1cc50e310670924813f112c4bcced97851b9bf346717ff74581fb5bf4c14b98b

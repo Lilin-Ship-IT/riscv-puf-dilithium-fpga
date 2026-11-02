@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-10-18T11:13:13",
+  "port": "COM3 115200 8N1",
+  "firmware": "内置 2KB 固件（00..FF 循环）",
+  "fw_sha3_256": "498cd3cc87a77b907debb761a2e6f59ed9edeaefc74f2c9c5c5f3b62f64c4aa1",
+  "seed": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+  "pubk_bytes": 1312,
+  "priv_bytes": 2528,
+  "sig_bytes": 2424,
+  "verify": "PASS",
+  "note": "演示密钥与签名，仅用于项目文档和验收，不用于生产。"
+}

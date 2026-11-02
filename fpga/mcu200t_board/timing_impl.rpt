@@ -1,0 +1,1503 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Oct 14 23:49:56 2026
+| Host         : FarMount-NearRiver running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file D:/FPGA/my_fpga/mcu200t_board/timing_impl.rpt
+| Design       : system
+| Device       : 7a200t-fbg484
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+-------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 197 register/latch pins with no clock driven by root clock pin: mcu_TCK (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_uart0/regs_q_reg[31]/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_uart1/regs_q_reg[31]/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_uart2/regs_q_reg[31]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_buf_icb_splt/splt_num_gt_1_gen.fifo_dp_1.u_sirv_gnrl_rspid_fifo/dp_gt_0.vld_dfflr/qout_r_reg[0]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.dp_gt1.rptr_vec_31_dfflr/qout_r_reg[0]_rep/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.dp_gt1.rptr_vec_31_dfflr/qout_r_reg[0]_rep__1/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.dp_gt1.rptr_vec_31_dfflr/qout_r_reg[0]_rep__2/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[47]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[48]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[49]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[57]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[58]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[59]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[60]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[61]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[62]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[63]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[64]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[65]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[66]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[67]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[68]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[69]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[70]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[71]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[72]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[73]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[74]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[75]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[76]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[0].fifo_rf_dffl/qout_r_reg[77]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[47]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[48]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[49]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[57]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[58]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[59]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[60]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[61]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[62]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[63]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[64]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[65]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[66]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[67]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[68]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[69]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[70]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[71]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[72]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[73]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[74]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[75]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[76]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.fifo_rf[1].fifo_rf_dffl/qout_r_reg[77]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.rptr_vec_0_dfflrs/qout_r_reg[0]_rep/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.rptr_vec_0_dfflrs/qout_r_reg[0]_rep__1/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.rptr_vec_0_dfflrs/qout_r_reg[0]_rep__2/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_ppi_fab/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.vec_31_dfflr/qout_r_reg[0]/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_uart0_apb_icb2apb/apb_enable_dfflr/qout_r_reg[0]/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_uart1_apb_icb2apb/apb_enable_dfflr/qout_r_reg[0]/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_uart2_apb_icb2apb/apb_enable_dfflr/qout_r_reg[0]/Q (HIGH)
+
+ There are 197 register/latch pins with no clock driven by root clock pin: pullup_TCK/O (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 579 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 73 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 73 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 6 combinational latch loops in the design through latch input (HIGH)
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.000        0.000                      0                97798        0.051        0.000                      0                97798        3.000        0.000                       0                 42118  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock            Waveform(ns)             Period(ns)      Frequency(MHz)
+-----            ------------             ----------      --------------
+CLK100MHZ        {0.000 5.000}            10.000          100.000         
+  clk_out2_mmcm  {0.000 31.250}           62.500          16.000          
+  clkfbout_mmcm  {0.000 5.000}            10.000          100.000         
+sys_clk_pin      {0.000 15258.791}        30517.582       0.033           
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+CLK100MHZ                                                                                                                                                          3.000        0.000                       0                     1  
+  clk_out2_mmcm        0.000        0.000                      0                87414        0.051        0.000                      0                87414       30.120        0.000                       0                 41122  
+  clkfbout_mmcm                                                                                                                                                    8.408        0.000                       0                     3  
+sys_clk_pin        30509.307        0.000                      0                 1962        0.120        0.000                      0                 1962    15258.288        0.000                       0                   992  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock     To Clock           WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------     --------           -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+sys_clk_pin    clk_out2_mmcm       21.746        0.000                      0                   41        0.656        0.000                      0                   41  
+clk_out2_mmcm  sys_clk_pin         11.771        0.000                      0                   50        0.138        0.000                      0                   50  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  clk_out2_mmcm      clk_out2_mmcm           41.105        0.000                      0                 7913        0.323        0.000                      0                 7913  
+**async_default**  sys_clk_pin        clk_out2_mmcm           19.496        0.000                      0                   42        1.841        0.000                      0                   42  
+**async_default**  sys_clk_pin        sys_clk_pin          30513.957        0.000                      0                  426        0.458        0.000                      0                  426  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  CLK100MHZ
+  To Clock:  CLK100MHZ
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         CLK100MHZ
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { CLK100MHZ }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X0Y2  ip_mmcm/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X0Y2  ip_mmcm/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y2  ip_mmcm/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y2  ip_mmcm/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_mmcm
+  To Clock:  clk_out2_mmcm
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.000ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.051ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       30.120ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.000ns  (required time - arrival time)
+  Source:                 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/qout_r_reg[14]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Destination:            dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_clk_ctrl/u_itcm_clkgate/enb_reg/D
+                            (positive level-sensitive latch clocked by clk_out2_mmcm'  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Path Group:             clk_out2_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            31.250ns  (clk_out2_mmcm fall@31.250ns - clk_out2_mmcm rise@0.000ns)
+  Data Path Delay:        39.383ns  (logic 8.088ns (20.537%)  route 31.295ns (79.463%))
+  Logic Levels:           46  (CARRY4=5 LUT2=3 LUT3=3 LUT4=6 LUT5=5 LUT6=24)
+  Clock Path Skew:        -2.061ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.083ns = ( 31.333 - 31.250 ) 
+    Source Clock Delay      (SCD):    2.475ns
+    Clock Pessimism Removal (CPR):    0.330ns
+  Clock Uncertainty:      0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.209ns
+    Phase Error              (PE):    0.000ns
+  Time Borrowing:         
+    Nominal pulse width:              31.250ns
+    Library setup time:              -0.018ns
+    Computed max time borrow:         31.232ns
+    Time borrowed from endpoint:      10.305ns
+    Open edge uncertainty:           -0.110ns
+    Time given to startpoint:         10.195ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_mmcm rise edge)
+                                                      0.000     0.000 r  
+    W19                                               0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         1.440     1.440 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.065     2.505    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.325    -3.819 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.559    -2.260    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.081    -2.179 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.981    -0.198    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X82Y144        LUT5 (Prop_lut5_I2_O)        0.105    -0.093 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/qout_r[31]_i_5__17/O
+                         net (fo=1, routed)           0.690     0.597    dut_n_32
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.081     0.678 r  qout_r_reg[31]_i_2__1/O
+                         net (fo=182, routed)         1.796     2.475    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/clk_core_ifu
+    SLICE_X20Y41         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/qout_r_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y41         FDCE (Prop_fdce_C_Q)         0.433     2.908 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/qout_r_reg[14]/Q
+                         net (fo=24, routed)          1.241     4.149    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/Q[14]
+    SLICE_X30Y37         LUT4 (Prop_lut4_I0_O)        0.119     4.268 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/alu_o_wbck_err_i_31/O
+                         net (fo=9, routed)           0.927     5.195    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/qout_r_reg[14]_0
+    SLICE_X22Y37         LUT4 (Prop_lut4_I1_O)        0.295     5.490 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/alu_o_wbck_err_i_48/O
+                         net (fo=4, routed)           0.815     6.304    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_10__1_0
+    SLICE_X22Y37         LUT6 (Prop_lut6_I3_O)        0.264     6.568 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/alu_o_wbck_err_i_21/O
+                         net (fo=1, routed)           0.540     7.108    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/alu_o_wbck_err_i_21_n_1
+    SLICE_X23Y37         LUT6 (Prop_lut6_I0_O)        0.105     7.213 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/alu_o_wbck_err_i_6/O
+                         net (fo=13, routed)          0.739     7.952    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r_reg[12]_2
+    SLICE_X32Y37         LUT6 (Prop_lut6_I0_O)        0.105     8.057 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_3__70/O
+                         net (fo=13, routed)          0.851     8.908    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_3__70_n_1
+    SLICE_X33Y44         LUT4 (Prop_lut4_I0_O)        0.105     9.013 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_3__71/O
+                         net (fo=124, routed)         1.368    10.381    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r_reg[0]_18
+    SLICE_X31Y55         LUT4 (Prop_lut4_I0_O)        0.115    10.496 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[1]_i_6__21/O
+                         net (fo=4, routed)           0.550    11.047    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/muldiv_state_dfflr/qout_r_reg[1]_9
+    SLICE_X31Y55         LUT6 (Prop_lut6_I1_O)        0.267    11.314 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/muldiv_state_dfflr/qout_r[1]_i_3__9/O
+                         net (fo=4, routed)           0.680    11.994    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/muldiv_state_dfflr/qout_r[1]_i_3__9_n_1
+    SLICE_X31Y53         LUT6 (Prop_lut6_I2_O)        0.105    12.099 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/muldiv_state_dfflr/qout_r[0]_i_57__0/O
+                         net (fo=1, routed)           0.505    12.603    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r_reg[32]_i_4_0
+    SLICE_X31Y53         LUT6 (Prop_lut6_I3_O)        0.105    12.708 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_29__0/O
+                         net (fo=70, routed)          1.071    13.780    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_dpath/adder_cin
+    SLICE_X29Y58         LUT2 (Prop_lut2_I0_O)        0.105    13.885 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_19__3/O
+                         net (fo=3, routed)           0.702    14.587    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_19__3_n_1
+    SLICE_X30Y60         LUT6 (Prop_lut6_I0_O)        0.105    14.692 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_7__11/O
+                         net (fo=2, routed)           0.642    15.333    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_dpath/adder_in1[32]
+    SLICE_X28Y59         LUT6 (Prop_lut6_I2_O)        0.105    15.438 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_10__18/O
+                         net (fo=1, routed)           0.000    15.438    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_10__18_n_1
+    SLICE_X28Y59         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.207    15.645 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r_reg[0]_i_2__2/O[0]
+                         net (fo=9, routed)           1.190    16.835    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_10__18_0[32]
+    SLICE_X28Y40         LUT3 (Prop_lut3_I1_O)        0.268    17.103 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[32]_i_15__0/O
+                         net (fo=32, routed)          0.811    17.914    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[32]_i_15__0_n_1
+    SLICE_X27Y50         LUT6 (Prop_lut6_I2_O)        0.267    18.181 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[2]_i_5__6/O
+                         net (fo=2, routed)           0.707    18.888    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[2]_i_5__6_n_1
+    SLICE_X26Y50         LUT6 (Prop_lut6_I5_O)        0.105    18.993 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_17__2/O
+                         net (fo=1, routed)           0.703    19.696    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_17__2_n_1
+    SLICE_X18Y51         LUT6 (Prop_lut6_I4_O)        0.105    19.801 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_15__2/O
+                         net (fo=1, routed)           0.945    20.746    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_15__2_n_1
+    SLICE_X35Y40         LUT6 (Prop_lut6_I1_O)        0.105    20.851 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_13__2/O
+                         net (fo=1, routed)           0.494    21.346    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_lsuagu/agu_addr_unalgn
+    SLICE_X37Y36         LUT6 (Prop_lut6_I2_O)        0.105    21.451 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_10__8/O
+                         net (fo=1, routed)           0.665    22.116    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.ret_ptr_flg_dfflrs/qout_r[1]_i_11__11_0
+    SLICE_X39Y36         LUT6 (Prop_lut6_I2_O)        0.105    22.221 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.ret_ptr_flg_dfflrs/qout_r[0]_i_6__19/O
+                         net (fo=3, routed)           0.280    22.501    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/alu_excp_cmt_i_ready
+    SLICE_X36Y35         LUT5 (Prop_lut5_I3_O)        0.105    22.606 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_2__40/O
+                         net (fo=9, routed)           0.760    23.366    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/nice_req_valid
+    SLICE_X31Y36         LUT5 (Prop_lut5_I1_O)        0.126    23.492 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[1]_i_7__16/O
+                         net (fo=3, routed)           0.696    24.188    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[1]_i_7__16_n_1
+    SLICE_X30Y35         LUT6 (Prop_lut6_I0_O)        0.267    24.455 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[1]_i_5__14/O
+                         net (fo=2, routed)           0.898    25.354    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/qout_r_reg[0]_6
+    SLICE_X46Y38         LUT2 (Prop_lut2_I1_O)        0.105    25.459 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/qout_r[0]_i_2__64/O
+                         net (fo=3, routed)           0.891    26.350    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/qout_r_reg[11]_0
+    SLICE_X42Y36         LUT6 (Prop_lut6_I2_O)        0.105    26.455 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_hi_ir_dfflr/qout_r[0]_i_6__17/O
+                         net (fo=2, routed)           0.381    26.836    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/enb_reg_i_4__1_0
+    SLICE_X42Y36         LUT6 (Prop_lut6_I2_O)        0.105    26.941 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/enb_reg_i_6__0/O
+                         net (fo=1, routed)           0.539    27.481    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_commit/u_e203_exu_excp/step_req_dfflr/alu_ebreakm_flush_req__0
+    SLICE_X41Y34         LUT6 (Prop_lut6_I1_O)        0.105    27.586 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_commit/u_e203_exu_excp/step_req_dfflr/enb_reg_i_4__1/O
+                         net (fo=7, routed)           0.614    28.200    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.ret_ptr_flg_dfflrs/qout_r_reg[2]_0
+    SLICE_X38Y35         LUT6 (Prop_lut6_I4_O)        0.105    28.305 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.ret_ptr_flg_dfflrs/qout_r[3]_i_7__10/O
+                         net (fo=11, routed)          0.781    29.086    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/commit_trap
+    SLICE_X29Y40         LUT2 (Prop_lut2_I1_O)        0.108    29.194 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[3]_i_3__8/O
+                         net (fo=30, routed)          0.872    30.065    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[3]_i_3__8_n_1
+    SLICE_X24Y47         LUT6 (Prop_lut6_I1_O)        0.275    30.340 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[26]_i_2__8/O
+                         net (fo=1, routed)           0.899    31.239    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/pipe_flush_pc[26]
+    SLICE_X13Y46         LUT5 (Prop_lut5_I0_O)        0.105    31.344 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[26]_i_1__5/O
+                         net (fo=3, routed)           0.478    31.822    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/ifu_req_pc[23]
+    SLICE_X15Y47         LUT3 (Prop_lut3_I1_O)        0.105    31.927 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/ifu_req_pc2itcm_carry_i_1/O
+                         net (fo=1, routed)           0.000    31.927    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ift2icb/ifu_req_pc2itcm_carry__0_0[3]
+    SLICE_X15Y47         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.332    32.259 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ift2icb/ifu_req_pc2itcm_carry/CO[3]
+                         net (fo=1, routed)           0.000    32.259    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ift2icb/ifu_req_pc2itcm_carry_n_1
+    SLICE_X15Y48         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.132    32.391 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ift2icb/ifu_req_pc2itcm_carry__0/CO[1]
+                         net (fo=6, routed)           0.791    33.181    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r_reg[0]_144[0]
+    SLICE_X16Y40         LUT4 (Prop_lut4_I0_O)        0.276    33.457 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_5__31/O
+                         net (fo=5, routed)           0.686    34.143    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r_reg[0]_2
+    SLICE_X19Y40         LUT5 (Prop_lut5_I1_O)        0.283    34.426 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/ifu_icb_cmd2itcm_carry_i_6/O
+                         net (fo=37, routed)          0.675    35.101    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/ifu_icb_cmd2itcm_carry_i_6_n_1
+    SLICE_X17Y46         LUT3 (Prop_lut3_I1_O)        0.108    35.209 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/ifu_icb_cmd2itcm_carry_i_11/O
+                         net (fo=2, routed)           0.468    35.676    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/ifu2biu_icb_cmd_addr[20]
+    SLICE_X17Y47         LUT6 (Prop_lut6_I5_O)        0.267    35.943 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/ifu_icb_cmd2itcm_carry_i_3/O
+                         net (fo=1, routed)           0.000    35.943    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ift2icb/ifu_icb_cmd2itcm_carry__0_0[1]
+    SLICE_X17Y47         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.457    36.400 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ift2icb/ifu_icb_cmd2itcm_carry/CO[3]
+                         net (fo=1, routed)           0.000    36.400    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ift2icb/ifu_icb_cmd2itcm_carry_n_1
+    SLICE_X17Y48         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.132    36.532 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ift2icb/ifu_icb_cmd2itcm_carry__0/CO[1]
+                         net (fo=16, routed)          0.857    37.389    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/CO[0]
+    SLICE_X18Y37         LUT6 (Prop_lut6_I3_O)        0.275    37.664 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r[0]_i_6__10/O
+                         net (fo=2, routed)           0.629    38.293    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ir_valid_dfflr/qout_r_reg[0]_14
+    SLICE_X13Y35         LUT6 (Prop_lut6_I4_O)        0.105    38.398 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ir_valid_dfflr/qout_r[0]_i_2__25/O
+                         net (fo=9, routed)           0.475    38.874    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r_reg[0]_165
+    SLICE_X17Y35         LUT6 (Prop_lut6_I2_O)        0.105    38.979 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/enb_reg_i_2__0/O
+                         net (fo=14, routed)          1.091    40.069    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/qout_r_reg[0]_1
+    SLICE_X34Y38         LUT4 (Prop_lut4_I3_O)        0.125    40.194 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_ifu/u_e203_ifu_ifetch/ifu_lo_ir_dfflr/enb_reg_i_3__2/O
+                         net (fo=3, routed)           0.347    40.541    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_biu/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.vec_31_dfflr/enb_reg
+    SLICE_X33Y37         LUT5 (Prop_lut5_I2_O)        0.275    40.816 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_biu/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.vec_31_dfflr/enb_reg_i_1__1/O
+                         net (fo=1, routed)           1.042    41.858    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_clk_ctrl/u_itcm_clkgate/mem[1].non_last.mem_r_reg_0_0
+    SLICE_X47Y45         LDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_clk_ctrl/u_itcm_clkgate/enb_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_mmcm fall edge)
+                                                     31.250    31.250 f  
+    W19                                               0.000    31.250 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    31.250    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         1.374    32.624 f  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004    33.628    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.451    27.176 f  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.488    28.664    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.077    28.741 f  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          2.046    30.787    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk1_clkgate/clk_out2
+    SLICE_X51Y47         LUT4 (Prop_lut4_I1_O)        0.084    30.871 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk1_clkgate/enb_reg_i_2__3/O
+                         net (fo=6, routed)           0.462    31.333    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_clk_ctrl/u_itcm_clkgate/mem[1].non_last.mem_r_reg_0_0_0
+    SLICE_X47Y45         LDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_clk_ctrl/u_itcm_clkgate/enb_reg/G
+                         clock pessimism              0.330    31.663    
+                         clock uncertainty           -0.110    31.553    
+                         time borrowed               10.305    41.858    
+  -------------------------------------------------------------------
+                         required time                         41.858    
+                         arrival time                         -41.858    
+  -------------------------------------------------------------------
+                         slack                                  0.000    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.051ns  (arrival time - required time)
+  Source:                 dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/aj2_reg[23]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Destination:            dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/aj3_reg[2][23]_srl3/D
+                            (rising edge-triggered cell SRL16E clocked by clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Path Group:             clk_out2_mmcm
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_mmcm rise@0.000ns - clk_out2_mmcm rise@0.000ns)
+  Data Path Delay:        0.249ns  (logic 0.141ns (56.528%)  route 0.108ns (43.472%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.675ns
+    Source Clock Delay      (SCD):    0.539ns
+    Clock Pessimism Removal (CPR):    0.121ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_mmcm rise edge)
+                                                      0.000     0.000 r  
+    W19                                               0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         0.277     0.277 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.717    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.560    -1.843 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.545    -1.299    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.026    -1.273 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          0.788    -0.485    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X80Y144        LUT4 (Prop_lut4_I2_O)        0.045    -0.440 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/n_0_6352_BUFG_inst_i_1/O
+                         net (fo=1, routed)           0.312    -0.128    n_0_6352_BUFG_inst_n_1
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -0.102 r  n_0_6352_BUFG_inst/O
+                         net (fo=38366, routed)       0.640     0.539    dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/out
+    SLICE_X95Y67         FDRE                                         r  dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/aj2_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y67         FDRE (Prop_fdre_C_Q)         0.141     0.680 r  dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/aj2_reg[23]/Q
+                         net (fo=1, routed)           0.108     0.788    dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/aj2[23]
+    SLICE_X94Y66         SRL16E                                       r  dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/aj3_reg[2][23]_srl3/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_mmcm rise edge)
+                                                      0.000     0.000 r  
+    W19                                               0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         0.465     0.465 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.945    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.355    -2.410 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.595    -1.815    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.029    -1.786 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.110    -0.677    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X80Y144        LUT4 (Prop_lut4_I2_O)        0.056    -0.621 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/n_0_6352_BUFG_inst_i_1/O
+                         net (fo=1, routed)           0.354    -0.267    n_0_6352_BUFG_inst_n_1
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -0.238 r  n_0_6352_BUFG_inst/O
+                         net (fo=38366, routed)       0.913     0.675    dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/out
+    SLICE_X94Y66         SRL16E                                       r  dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/aj3_reg[2][23]_srl3/CLK
+                         clock pessimism             -0.121     0.554    
+    SLICE_X94Y66         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.183     0.737    dut/u_dilithium_apb/u_dut/genblk2[0].OPERATOR/BF_CIRCUIT/BF2_1/aj3_reg[2][23]_srl3
+  -------------------------------------------------------------------
+                         required time                         -0.737    
+                         arrival time                           0.788    
+  -------------------------------------------------------------------
+                         slack                                  0.051    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out2_mmcm
+Waveform(ns):       { 0.000 31.250 }
+Period(ns):         62.500
+Sources:            { ip_mmcm/inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.472         62.500      60.028     RAMB36_X8Y12     dut/u_dilithium_apb/u_dut/BRAM_0/ram_reg_0/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       62.500      150.860    MMCME2_ADV_X0Y2  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.130         31.250      30.120     SLICE_X42Y79     dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_qspi0_top/u_sirv_flash_qspi/fifo/rxq/ram_reg_0_7_0_5/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.130         31.250      30.120     SLICE_X42Y80     dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_qspi0_top/u_sirv_flash_qspi/fifo/rxq/ram_reg_0_7_6_7/RAMA/CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_mmcm
+  To Clock:  clkfbout_mmcm
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        8.408ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_mmcm
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { ip_mmcm/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            1.592         10.000      8.408      BUFGCTRL_X0Y13   ip_mmcm/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       10.000      90.000     MMCME2_ADV_X0Y2  ip_mmcm/inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack    30509.307ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.120ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack    15258.288ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             30509.307ns  (required time - arrival time)
+  Source:                 dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/ram_index_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Destination:            dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[28]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            30517.582ns  (sys_clk_pin rise@30517.582ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        8.284ns  (logic 0.748ns (9.030%)  route 7.536ns (90.970%))
+  Logic Levels:           3  (LUT6=3)
+  Clock Path Skew:        -0.033ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.721ns = ( 30522.303 - 30517.582 ) 
+    Source Clock Delay      (SCD):    4.990ns
+    Clock Pessimism Removal (CPR):    0.236ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000     0.000    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.827     3.280    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.081     3.361 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         1.629     4.990    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/ls_clk_i
+    SLICE_X20Y78         FDRE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/ram_index_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y78         FDRE (Prop_fdre_C_Q)         0.433     5.423 f  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/ram_index_reg[3]/Q
+                         net (fo=117, routed)         5.613    11.036    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/ram_index_reg[3]_0[3]
+    SLICE_X10Y86         LUT6 (Prop_lut6_I1_O)        0.105    11.141 f  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/qout_r[29]_i_3__14/O
+                         net (fo=12, routed)          1.244    12.385    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/qout_r[29]_i_3__14_n_1
+    SLICE_X16Y86         LUT6 (Prop_lut6_I5_O)        0.105    12.490 r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/qout_r[28]_i_2__18/O
+                         net (fo=1, routed)           0.678    13.168    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/qout_r[28]_i_2__18_n_1
+    SLICE_X14Y85         LUT6 (Prop_lut6_I1_O)        0.105    13.273 r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_queue_1/qout_r[28]_i_1__21/O
+                         net (fo=1, routed)           0.000    13.273    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_tx/dat_dfflr/D[28]
+    SLICE_X14Y85         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                  30517.582 30517.582 r  
+    Y18                                               0.000 30517.582 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000 30517.582    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         1.387 30518.969 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.734 30520.703    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077 30520.779 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         1.523 30522.303    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_tx/dat_dfflr/ls_clk_i
+    SLICE_X14Y85         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[28]/C
+                         clock pessimism              0.236 30522.539    
+                         clock uncertainty           -0.035 30522.504    
+    SLICE_X14Y85         FDCE (Setup_fdce_C_D)        0.076 30522.580    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[28]
+  -------------------------------------------------------------------
+                         required time                      30522.580    
+                         arrival time                         -13.273    
+  -------------------------------------------------------------------
+                         slack                              30509.307    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.120ns  (arrival time - required time)
+  Source:                 dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[0].i_is_0.sync_dffr/qout_r_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Destination:            dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[1].i_is_not_0.sync_dffr/qout_r_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.196ns  (logic 0.141ns (71.838%)  route 0.055ns (28.162%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.686ns
+    Clock Pessimism Removal (CPR):    0.523ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000     0.000    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         0.289     0.289 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.690     0.980    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026     1.006 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         0.680     1.686    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[0].i_is_0.sync_dffr/ls_clk_i
+    SLICE_X23Y77         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[0].i_is_0.sync_dffr/qout_r_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y77         FDCE (Prop_fdce_C_Q)         0.141     1.827 r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[0].i_is_0.sync_dffr/qout_r_reg[0]/Q
+                         net (fo=1, routed)           0.055     1.882    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[1].i_is_not_0.sync_dffr/qout_r_reg[0]_0
+    SLICE_X23Y77         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[1].i_is_not_0.sync_dffr/qout_r_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000     0.000    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         0.478     0.478 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.750     1.227    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029     1.256 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         0.953     2.209    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[1].i_is_not_0.sync_dffr/ls_clk_i
+    SLICE_X23Y77         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[1].i_is_not_0.sync_dffr/qout_r_reg[0]/C
+                         clock pessimism             -0.523     1.686    
+    SLICE_X23Y77         FDCE (Hold_fdce_C_D)         0.076     1.762    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/u_i_vld_sync/sync_gen[1].i_is_not_0.sync_dffr/qout_r_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.762    
+                         arrival time                           1.882    
+  -------------------------------------------------------------------
+                         slack                                  0.120    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 15258.791 }
+Period(ns):         30517.582
+Sources:            { CLK32768KHZ }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            1.592         30517.582   30515.990  BUFGCTRL_X0Y2  CLK32768KHZ_IBUF_BUFG_inst/I
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         15258.789   15258.288  SLICE_X21Y78   dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[30]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         15258.791   15258.291  SLICE_X22Y78   dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_1to2_icb/u_i_icb_splt/splt_num_gt_1_gen.fifo_dp_1.u_sirv_gnrl_rspid_fifo/dp_gt_0.dat_dfflr/qout_r_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  clk_out2_mmcm
+
+Setup :            0  Failing Endpoints,  Worst Slack       21.746ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.656ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             21.746ns  (required time - arrival time)
+  Source:                 dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/ip_reg/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Destination:            dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_plic/u_rtc_irq_sync/sync_gen[0].i_is_0.sync_dffr/qout_r_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Path Group:             clk_out2_mmcm
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            27.336ns  (clk_out2_mmcm rise@61062.500ns - sys_clk_pin rise@61035.164ns)
+  Data Path Delay:        1.758ns  (logic 0.379ns (21.561%)  route 1.379ns (78.438%))
+  Logic Levels:           0  
+  Clock Path Skew:        -3.561ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.504ns = ( 61064.004 - 61062.500 ) 
+    Source Clock Delay      (SCD):    5.065ns = ( 61040.230 - 61035.164 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.225ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.209ns
+    Phase Error              (PE):    0.114ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                  61035.164 61035.164 r  
+    Y18                                               0.000 61035.164 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000 61035.164    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         1.453 61036.617 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.827 61038.445    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.081 61038.527 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         1.704 61040.230    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/ls_clk_i
+    SLICE_X7Y84          FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/ip_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y84          FDCE (Prop_fdce_C_Q)         0.379 61040.609 r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/ip_reg/Q
+                         net (fo=6, routed)           1.379 61041.988    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_plic/u_rtc_irq_sync/sync_gen[0].i_is_0.sync_dffr/aon_rtc_irq_a
+    SLICE_X17Y78         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_plic/u_rtc_irq_sync/sync_gen[0].i_is_0.sync_dffr/qout_r_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_mmcm rise edge)
+                                                  61062.500 61062.500 r  
+    W19                                               0.000 61062.500 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000 61062.500    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         1.374 61063.875 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004 61064.879    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.451 61058.426 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.488 61059.914    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.077 61059.992 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.712 61061.703    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X80Y144        LUT4 (Prop_lut4_I2_O)        0.084 61061.789 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/n_0_6352_BUFG_inst_i_1/O
+                         net (fo=1, routed)           0.624 61062.414    n_0_6352_BUFG_inst_n_1
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077 61062.492 r  n_0_6352_BUFG_inst/O
+                         net (fo=38366, routed)       1.516 61064.008    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_plic/u_rtc_irq_sync/sync_gen[0].i_is_0.sync_dffr/n_0_6352_BUFG
+    SLICE_X17Y78         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_plic/u_rtc_irq_sync/sync_gen[0].i_is_0.sync_dffr/qout_r_reg[0]/C
+                         clock pessimism              0.000 61064.008    
+                         clock uncertainty           -0.225 61063.781    
+    SLICE_X17Y78         FDCE (Setup_fdce_C_D)       -0.047 61063.734    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_plic/u_rtc_irq_sync/sync_gen[0].i_is_0.sync_dffr/qout_r_reg[0]
+  -------------------------------------------------------------------
+                         required time                      61063.730    
+                         arrival time                       -61041.988    
+  -------------------------------------------------------------------
+                         slack                                 21.746    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.656ns  (arrival time - required time)
+  Source:                 CLK32768KHZ
+                            (clock source 'sys_clk_pin'  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Destination:            dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim0/u_in_stage/r_ls_clk_sync_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Path Group:             clk_out2_mmcm
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_mmcm rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.743ns  (logic 0.315ns (18.101%)  route 1.427ns (81.899%))
+  Logic Levels:           2  (BUFG=1 IBUF=1)
+  Clock Path Skew:        0.787ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.787ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.225ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.209ns
+    Phase Error              (PE):    0.114ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000     0.000    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         0.289     0.289 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.690     0.980    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026     1.006 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         0.737     1.743    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim0/u_in_stage/ls_clk_i
+    SLICE_X41Y89         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim0/u_in_stage/r_ls_clk_sync_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_mmcm rise edge)
+                                                      0.000     0.000 r  
+    W19                                               0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         0.465     0.465 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.945    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.355    -2.410 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.595    -1.815    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.029    -1.786 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.164    -0.622    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X83Y144        LUT5 (Prop_lut5_I2_O)        0.055    -0.567 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/r_active_i_3__2/O
+                         net (fo=1, routed)           0.292    -0.275    dut_n_141
+    BUFGCTRL_X0Y7        BUFG (Prop_bufg_I_O)         0.107    -0.168 r  r_active_reg_i_2__1/O
+                         net (fo=171, routed)         0.956     0.787    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim0/u_in_stage/r_event_reg_0
+    SLICE_X41Y89         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim0/u_in_stage/r_ls_clk_sync_reg[0]/C
+                         clock pessimism              0.000     0.787    
+                         clock uncertainty            0.225     1.012    
+    SLICE_X41Y89         FDCE (Hold_fdce_C_D)         0.075     1.087    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim0/u_in_stage/r_ls_clk_sync_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.087    
+                         arrival time                           1.743    
+  -------------------------------------------------------------------
+                         slack                                  0.656    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_mmcm
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack       11.771ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.138ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             11.771ns  (required time - arrival time)
+  Source:                 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Destination:            dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            17.582ns  (sys_clk_pin rise@30517.582ns - clk_out2_mmcm rise@30500.000ns)
+  Data Path Delay:        8.065ns  (logic 0.538ns (6.671%)  route 7.527ns (93.329%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        2.446ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.716ns = ( 30522.299 - 30517.582 ) 
+    Source Clock Delay      (SCD):    2.270ns = ( 30502.270 - 30500.000 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.225ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.209ns
+    Phase Error              (PE):    0.114ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_mmcm rise edge)
+                                                  30500.000 30500.000 r  
+    W19                                               0.000 30500.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000 30500.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         1.440 30501.439 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.065 30502.504    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.325 30496.180 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.559 30497.738    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.081 30497.818 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.923 30499.742    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X80Y144        LUT4 (Prop_lut4_I2_O)        0.105 30499.848 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/n_0_6352_BUFG_inst_i_1/O
+                         net (fo=1, routed)           0.708 30500.557    n_0_6352_BUFG_inst_n_1
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081 30500.637 r  n_0_6352_BUFG_inst/O
+                         net (fo=38366, routed)       1.632 30502.270    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_aon_icb_cdc_tx/dat_dfflr/n_0_6352_BUFG
+    SLICE_X18Y79         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y79         FDCE (Prop_fdce_C_Q)         0.433 30502.703 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[3]/Q
+                         net (fo=1, routed)           7.527 30510.230    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_3/o_dat[3]
+    SLICE_X19Y79         LUT2 (Prop_lut2_I1_O)        0.105 30510.336 r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_3/qout_r[3]_i_1__42/O
+                         net (fo=1, routed)           0.000 30510.336    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[47]_0[3]
+    SLICE_X19Y79         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                  30517.582 30517.582 r  
+    Y18                                               0.000 30517.582 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000 30517.582    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         1.387 30518.969 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.734 30520.703    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077 30520.779 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         1.518 30522.297    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/ls_clk_i
+    SLICE_X19Y79         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[3]/C
+                         clock pessimism              0.000 30522.297    
+                         clock uncertainty           -0.225 30522.072    
+    SLICE_X19Y79         FDCE (Setup_fdce_C_D)        0.032 30522.104    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[3]
+  -------------------------------------------------------------------
+                         required time                      30522.104    
+                         arrival time                       -30510.334    
+  -------------------------------------------------------------------
+                         slack                                 11.771    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.138ns  (arrival time - required time)
+  Source:                 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[41]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Destination:            dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[41]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - clk_out2_mmcm rise@0.000ns)
+  Data Path Delay:        4.126ns  (logic 0.388ns (9.405%)  route 3.738ns (90.595%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        3.492ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.988ns
+    Source Clock Delay      (SCD):    1.496ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.225ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.209ns
+    Phase Error              (PE):    0.114ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_mmcm rise edge)
+                                                      0.000     0.000 r  
+    W19                                               0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         1.374     1.374 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004     2.378    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.451    -4.074 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.488    -2.586    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.077    -2.509 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.712    -0.797    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X80Y144        LUT4 (Prop_lut4_I2_O)        0.084    -0.713 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/n_0_6352_BUFG_inst_i_1/O
+                         net (fo=1, routed)           0.624    -0.089    n_0_6352_BUFG_inst_n_1
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    -0.012 r  n_0_6352_BUFG_inst/O
+                         net (fo=38366, routed)       1.508     1.496    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_aon_icb_cdc_tx/dat_dfflr/n_0_6352_BUFG
+    SLICE_X30Y77         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[41]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y77         FDCE (Prop_fdce_C_Q)         0.304     1.800 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_aon_icb_cdc_tx/dat_dfflr/qout_r_reg[41]/Q
+                         net (fo=1, routed)           3.738     5.538    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_3/o_dat[41]
+    SLICE_X22Y77         LUT2 (Prop_lut2_I1_O)        0.084     5.622 r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_3/qout_r[41]_i_1__2/O
+                         net (fo=1, routed)           0.000     5.622    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[47]_0[41]
+    SLICE_X22Y77         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[41]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000     0.000    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.827     3.280    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.081     3.361 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         1.627     4.988    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/ls_clk_i
+    SLICE_X22Y77         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[41]/C
+                         clock pessimism              0.000     4.988    
+                         clock uncertainty            0.225     5.213    
+    SLICE_X22Y77         FDCE (Hold_fdce_C_D)         0.271     5.484    dut/u_e203_subsys_top/u_sirv_aon_top/u_aon_icb_cdc_rx/buf_dat_dfflr/qout_r_reg[41]
+  -------------------------------------------------------------------
+                         required time                         -5.484    
+                         arrival time                           5.622    
+  -------------------------------------------------------------------
+                         slack                                  0.138    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk_out2_mmcm
+  To Clock:  clk_out2_mmcm
+
+Setup :            0  Failing Endpoints,  Worst Slack       41.105ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.323ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             41.105ns  (required time - arrival time)
+  Source:                 dut/u_e203_subsys_top/u_e203_subsys_main/u_main_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_0/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Destination:            dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim1/u_comp_ch1/r_comp_reg[0]/CLR
+                            (recovery check against rising-edge clock clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            62.500ns  (clk_out2_mmcm rise@62.500ns - clk_out2_mmcm rise@0.000ns)
+  Data Path Delay:        20.114ns  (logic 0.484ns (2.406%)  route 19.630ns (97.594%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.839ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.178ns = ( 63.678 - 62.500 ) 
+    Source Clock Delay      (SCD):    2.347ns
+    Clock Pessimism Removal (CPR):    0.330ns
+  Clock Uncertainty:      0.110ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.209ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_mmcm rise edge)
+                                                      0.000     0.000 r  
+    W19                                               0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         1.440     1.440 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.065     2.505    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.325    -3.819 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.559    -2.260    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.081    -2.179 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.923    -0.256    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X80Y144        LUT4 (Prop_lut4_I2_O)        0.105    -0.151 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/n_0_6352_BUFG_inst_i_1/O
+                         net (fo=1, routed)           0.708     0.557    n_0_6352_BUFG_inst_n_1
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081     0.638 r  n_0_6352_BUFG_inst/O
+                         net (fo=38366, routed)       1.709     2.347    dut/u_e203_subsys_top/u_e203_subsys_main/u_main_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_0/n_0_6352_BUFG
+    SLICE_X0Y61          FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_main_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_0/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y61          FDCE (Prop_fdce_C_Q)         0.379     2.726 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_main_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_0/q_reg/Q
+                         net (fo=1, routed)           0.206     2.932    dut/u_e203_subsys_top/u_e203_subsys_main/u_main_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_0/per_rst_n
+    SLICE_X1Y61          LUT1 (Prop_lut1_I0_O)        0.105     3.037 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_main_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_0/qout_r[1]_i_2__0/O
+                         net (fo=6773, routed)       19.424    22.461    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim1/u_comp_ch1/reset0
+    SLICE_X85Y90         FDCE                                         f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim1/u_comp_ch1/r_comp_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_mmcm rise edge)
+                                                     62.500    62.500 r  
+    W19                                               0.000    62.500 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    62.500    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         1.374    63.874 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004    64.878    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.451    58.426 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.488    59.914    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.077    59.991 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.563    61.554    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X84Y144        LUT5 (Prop_lut5_I2_O)        0.084    61.638 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/r_active_i_3__1/O
+                         net (fo=1, routed)           0.549    62.187    dut_n_140
+    BUFGCTRL_X0Y8        BUFG (Prop_bufg_I_O)         0.077    62.264 r  r_active_reg_i_2__2/O
+                         net (fo=171, routed)         1.414    63.678    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim1/u_comp_ch1/r_comp_op_reg[2]_0
+    SLICE_X85Y90         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim1/u_comp_ch1/r_comp_reg[0]/C
+                         clock pessimism              0.330    64.007    
+                         clock uncertainty           -0.110    63.897    
+    SLICE_X85Y90         FDCE (Recov_fdce_C_CLR)     -0.331    63.566    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_apb_pwm/u_tim1/u_comp_ch1/r_comp_reg[0]
+  -------------------------------------------------------------------
+                         required time                         63.566    
+                         arrival time                         -22.461    
+  -------------------------------------------------------------------
+                         slack                                 41.105    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.323ns  (arrival time - required time)
+  Source:                 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_reset_ctrl/master_gen.rst_sync_r_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Destination:            dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.alc_ptr_dfflrs/qout_r_reg[0]/CLR
+                            (removal check against rising-edge clock clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_mmcm rise@0.000ns - clk_out2_mmcm rise@0.000ns)
+  Data Path Delay:        0.945ns  (logic 0.186ns (19.684%)  route 0.759ns (80.316%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.714ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.855ns
+    Source Clock Delay      (SCD):    0.655ns
+    Clock Pessimism Removal (CPR):    -0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_mmcm rise edge)
+                                                      0.000     0.000 r  
+    W19                                               0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         0.277     0.277 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.717    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.560    -1.843 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.545    -1.299    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.026    -1.273 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          0.788    -0.485    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X80Y144        LUT4 (Prop_lut4_I2_O)        0.045    -0.440 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/n_0_6352_BUFG_inst_i_1/O
+                         net (fo=1, routed)           0.312    -0.128    n_0_6352_BUFG_inst_n_1
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -0.102 r  n_0_6352_BUFG_inst/O
+                         net (fo=38366, routed)       0.757     0.655    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_reset_ctrl/n_0_6352_BUFG
+    SLICE_X31Y37         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_reset_ctrl/master_gen.rst_sync_r_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y37         FDCE (Prop_fdce_C_Q)         0.141     0.796 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_reset_ctrl/master_gen.rst_sync_r_reg[1]/Q
+                         net (fo=1, routed)           0.353     1.149    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_reset_ctrl/p_0_in_0
+    SLICE_X31Y37         LUT1 (Prop_lut1_I0_O)        0.045     1.194 f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_reset_ctrl/qout_r[0]_i_2__36/O
+                         net (fo=744, routed)         0.406     1.600    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.alc_ptr_dfflrs/qout_r_reg[0]_5
+    SLICE_X33Y36         FDCE                                         f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.alc_ptr_dfflrs/qout_r_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_mmcm rise edge)
+                                                      0.000     0.000 r  
+    W19                                               0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         0.465     0.465 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.945    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.355    -2.410 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.595    -1.815    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.029    -1.786 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.172    -0.614    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X82Y144        LUT5 (Prop_lut5_I2_O)        0.056    -0.558 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/qout_r[31]_i_14__2/O
+                         net (fo=1, routed)           0.354    -0.205    dut_n_33
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029    -0.176 r  qout_r_reg[31]_i_3/O
+                         net (fo=1455, routed)        1.031     0.855    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.alc_ptr_dfflrs/core_csr_clk
+    SLICE_X33Y36         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.alc_ptr_dfflrs/qout_r_reg[0]/C
+                         clock pessimism              0.514     1.369    
+    SLICE_X33Y36         FDCE (Remov_fdce_C_CLR)     -0.092     1.277    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_oitf/depth_gt1.alc_ptr_dfflrs/qout_r_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.277    
+                         arrival time                           1.600    
+  -------------------------------------------------------------------
+                         slack                                  0.323    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  sys_clk_pin
+  To Clock:  clk_out2_mmcm
+
+Setup :            0  Failing Endpoints,  Worst Slack       19.496ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        1.841ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             19.496ns  (required time - arrival time)
+  Source:                 dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_4/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Destination:            dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/hfextclk_rstsync/rst_sync_r_reg[0]/CLR
+                            (recovery check against rising-edge clock clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            27.336ns  (clk_out2_mmcm rise@61062.500ns - sys_clk_pin rise@61035.164ns)
+  Data Path Delay:        1.301ns  (logic 0.484ns (37.215%)  route 0.817ns (62.785%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -5.984ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.997ns = ( 61061.504 - 61062.500 ) 
+    Source Clock Delay      (SCD):    4.987ns = ( 61040.152 - 61035.164 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.225ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.209ns
+    Phase Error              (PE):    0.114ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                  61035.164 61035.164 r  
+    Y18                                               0.000 61035.164 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000 61035.164    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         1.453 61036.617 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.827 61038.445    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.081 61038.527 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         1.626 61040.152    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_4/ls_clk_i
+    SLICE_X21Y76         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_4/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y76         FDCE (Prop_fdce_C_Q)         0.379 61040.531 r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_4/q_reg/Q
+                         net (fo=1, routed)           0.525 61041.055    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1_n_3
+    SLICE_X23Y76         LUT1 (Prop_lut1_I0_O)        0.105 61041.160 f  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/rst_sync_r[0]_i_1/O
+                         net (fo=2, routed)           0.291 61041.453    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/hfextclk_rstsync/hfclkrst
+    SLICE_X23Y76         FDCE                                         f  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/hfextclk_rstsync/rst_sync_r_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_mmcm rise edge)
+                                                  61062.500 61062.500 r  
+    W19                                               0.000 61062.500 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000 61062.500    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         1.374 61063.875 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.004 61064.879    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -6.451 61058.426 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.488 61059.914    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.077 61059.992 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.512 61061.504    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/hfextclk_rstsync/clk_out2
+    SLICE_X23Y76         FDCE                                         r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/hfextclk_rstsync/rst_sync_r_reg[0]/C
+                         clock pessimism              0.000 61061.504    
+                         clock uncertainty           -0.225 61061.277    
+    SLICE_X23Y76         FDCE (Recov_fdce_C_CLR)     -0.331 61060.945    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/hfextclk_rstsync/rst_sync_r_reg[0]
+  -------------------------------------------------------------------
+                         required time                      61060.949    
+                         arrival time                       -61041.449    
+  -------------------------------------------------------------------
+                         slack                                 19.496    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.841ns  (arrival time - required time)
+  Source:                 dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_3/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Destination:            dut/u_e203_subsys_top/u_sirv_debug_module/u_dm_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_10/q_reg/CLR
+                            (removal check against rising-edge clock clk_out2_mmcm  {rise@0.000ns fall@31.250ns period=62.500ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_mmcm rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.076ns  (logic 0.186ns (17.288%)  route 0.890ns (82.712%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.923ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.761ns
+    Source Clock Delay      (SCD):    1.684ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.225ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.209ns
+    Phase Error              (PE):    0.114ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000     0.000    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         0.289     0.289 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.690     0.980    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026     1.006 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         0.678     1.684    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_3/ls_clk_i
+    SLICE_X21Y74         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_3/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y74         FDCE (Prop_fdce_C_Q)         0.141     1.825 r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1/reg_3/q_reg/Q
+                         net (fo=52, routed)          0.232     2.057    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/AsyncResetRegVec_1_1_n_2
+    SLICE_X19Y75         LUT1 (Prop_lut1_I0_O)        0.045     2.102 f  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/q_i_1/O
+                         net (fo=44, routed)          0.658     2.760    dut/u_e203_subsys_top/u_sirv_debug_module/u_dm_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_10/corerst
+    SLICE_X2Y59          FDCE                                         f  dut/u_e203_subsys_top/u_sirv_debug_module/u_dm_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_10/q_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_mmcm rise edge)
+                                                      0.000     0.000 r  
+    W19                                               0.000     0.000 r  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     0.000    ip_mmcm/inst/clk_in1
+    W19                  IBUF (Prop_ibuf_I_O)         0.465     0.465 r  ip_mmcm/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.945    ip_mmcm/inst/clk_in1_mmcm
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.355    -2.410 r  ip_mmcm/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.595    -1.815    ip_mmcm/inst/clk_out2_mmcm
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.029    -1.786 r  ip_mmcm/inst/clkout2_buf/O
+                         net (fo=33, routed)          1.110    -0.677    dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/clk_out2
+    SLICE_X80Y144        LUT4 (Prop_lut4_I2_O)        0.056    -0.621 r  dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_hclkgen/u_e203_subsys_gfcm/u_clk0_clkgate/n_0_6352_BUFG_inst_i_1/O
+                         net (fo=1, routed)           0.354    -0.267    n_0_6352_BUFG_inst_n_1
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -0.238 r  n_0_6352_BUFG_inst/O
+                         net (fo=38366, routed)       0.999     0.761    dut/u_e203_subsys_top/u_sirv_debug_module/u_dm_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_10/CLK
+    SLICE_X2Y59          FDCE                                         r  dut/u_e203_subsys_top/u_sirv_debug_module/u_dm_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_10/q_reg/C
+                         clock pessimism              0.000     0.761    
+                         clock uncertainty            0.225     0.986    
+    SLICE_X2Y59          FDCE (Remov_fdce_C_CLR)     -0.067     0.919    dut/u_e203_subsys_top/u_sirv_debug_module/u_dm_ResetCatchAndSync_2_1/reset_n_catch_reg/reg_10/q_reg
+  -------------------------------------------------------------------
+                         required time                         -0.919    
+                         arrival time                           2.760    
+  -------------------------------------------------------------------
+                         slack                                  1.841    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack    30513.957ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.458ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             30513.957ns  (required time - arrival time)
+  Source:                 dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/aonrst_catch/reset_n_catch_reg/reg_0/q_reg/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Destination:            dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/T_148_reg[33]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            30517.582ns  (sys_clk_pin rise@30517.582ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.119ns  (logic 0.541ns (17.348%)  route 2.578ns (82.652%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.030ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.787ns = ( 30522.369 - 30517.582 ) 
+    Source Clock Delay      (SCD):    4.993ns
+    Clock Pessimism Removal (CPR):    0.236ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000     0.000    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.827     3.280    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.081     3.361 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         1.632     4.993    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/aonrst_catch/reset_n_catch_reg/reg_0/ls_clk_i
+    SLICE_X16Y79         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/aonrst_catch/reset_n_catch_reg/reg_0/q_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y79         FDCE (Prop_fdce_C_Q)         0.433     5.426 r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/aonrst_catch/reset_n_catch_reg/reg_0/q_reg/Q
+                         net (fo=2, routed)           0.206     5.632    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/aonrst_catch/reset_n_catch_reg/reg_0/q
+    SLICE_X17Y79         LUT1 (Prop_lut1_I0_O)        0.108     5.740 f  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/aonrst_catch/reset_n_catch_reg/reg_0/scale[3]_i_2__0/O
+                         net (fo=155, routed)         2.371     8.111    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/AR[0]
+    SLICE_X4Y81          FDCE                                         f  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/T_148_reg[33]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                  30517.582 30517.582 r  
+    Y18                                               0.000 30517.582 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000 30517.582    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         1.387 30518.969 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.734 30520.703    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077 30520.779 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         1.589 30522.369    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/ls_clk_i
+    SLICE_X4Y81          FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/T_148_reg[33]/C
+                         clock pessimism              0.236 30522.605    
+                         clock uncertainty           -0.035 30522.570    
+    SLICE_X4Y81          FDCE (Recov_fdce_C_CLR)     -0.501 30522.068    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/rtc/T_148_reg[33]
+  -------------------------------------------------------------------
+                         required time                      30522.068    
+                         arrival time                          -8.111    
+  -------------------------------------------------------------------
+                         slack                              30513.957    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.458ns  (arrival time - required time)
+  Source:                 dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/T_356_reg/C
+                            (rising edge-triggered cell FDPE clocked by sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Destination:            dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/u_pmu_core/wakeupProgram_5_reg[0]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@15258.791ns period=30517.582ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.401ns  (logic 0.141ns (35.192%)  route 0.260ns (64.808%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.035ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.212ns
+    Source Clock Delay      (SCD):    1.689ns
+    Clock Pessimism Removal (CPR):    0.488ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000     0.000    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         0.289     0.289 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.690     0.980    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026     1.006 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         0.683     1.689    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/ls_clk_i
+    SLICE_X11Y71         FDPE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/T_356_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y71         FDPE (Prop_fdpe_C_Q)         0.141     1.830 f  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/T_356_reg/Q
+                         net (fo=172, routed)         0.260     2.089    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/u_pmu_core/T_356
+    SLICE_X15Y72         FDCE                                         f  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/u_pmu_core/wakeupProgram_5_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  CLK32768KHZ (IN)
+                         net (fo=0)                   0.000     0.000    CLK32768KHZ
+    Y18                  IBUF (Prop_ibuf_I_O)         0.478     0.478 r  CLK32768KHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.750     1.227    CLK32768KHZ_IBUF
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029     1.256 r  CLK32768KHZ_IBUF_BUFG_inst/O
+                         net (fo=995, routed)         0.956     2.212    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/u_pmu_core/ls_clk_i
+    SLICE_X15Y72         FDCE                                         r  dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/u_pmu_core/wakeupProgram_5_reg[0]/C
+                         clock pessimism             -0.488     1.724    
+    SLICE_X15Y72         FDCE (Remov_fdce_C_CLR)     -0.092     1.632    dut/u_e203_subsys_top/u_sirv_aon_top/u_sirv_aon_wrapper/u_sirv_aon/u_sirv_pmu/u_pmu_core/wakeupProgram_5_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.632    
+                         arrival time                           2.089    
+  -------------------------------------------------------------------
+                         slack                                  0.458    
+
+
+
+
+
